@@ -19,8 +19,6 @@ use_gpu=True
 Utils.mkdir_if_not_exist(tight_faces_out_folder)
 Utils.mkdir_if_not_exist(loose_faces_out_folder)
 
-detector = dlib.get_frontal_face_detector()
-
 # init the face detector
 if use_gpu:
     face_detector = dlib.cnn_face_detection_model_v1("mmod_human_face_detector.dat")
